@@ -123,8 +123,54 @@ img {
   gap: 30px;
 }
 
+/* section */
+.section-padding {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title .title {
+  position: relative;
+  display: inline-block;
+  font-size: var(--fs-1g);
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--main-color);
+  margin: 0 0 12px;
+  padding: 0 40px;
+}
+
+.section-title .title::before,
+.section-title .title::after {
+  position: absolute;
+  height: 1px;
+  width: 34px;
+  top: 50%;
+  content: "";
+  background-color: var(--main-color);
+  transform: translateY(-50%);
+}
+
+.section-title .title::before {
+  left: 0;
+}
+
+.section-title .title::after {
+  right: 0;
+}
+
+.section-title .sub-title {
+  font-size: var(--fs-2xl);
+  text-transform: capitalize;
+}
+
 /* button */
 .btn {
+  position: relative;
   display: inline-block;
   padding: 10px 28px;
   background-color: var(--main-color);
@@ -266,4 +312,62 @@ img {
   max-width: 270px;
   display: block;
   margin: auto;
+}
+/* About */
+.about .section-title {
+  text-align: left;
+  margin: 0 0 15px;
+}
+
+.grid__about-img,
+.grid__about-text {
+  grid-column: span 6;
+}
+
+.grid__about-img .about-img__img-box {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow);
+}
+
+.grid__about-img .about-img__img-box img {
+  border-radius: 50%;
+}
+
+.grid__about-img .box {
+  position: absolute;
+  height: 125px;
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--main-color);
+  border-radius: 0 40px;
+  padding: 15px;
+}
+
+.grid__about-img .box-1 {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.grid__about-img .box span {
+  color: var(--text-white);
+  font-weight: bold;
+  font-size: var(--fs-3xl);
+  margin: 0 0 5px;
+  line-height: 1;
+}
+
+.grid__about-img .box  p {
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  color: var(--text-light-gray);
+  margin: 0;
 }
