@@ -404,7 +404,6 @@ img {
   font-weight: 500;
 }
 
-
 /* pricing */
 .pricing-item {
   grid-column: span 4;
@@ -454,7 +453,7 @@ img {
   text-transform: capitalize;
 }
 
-.princing-body li+li {
+.princing-body li + li {
   margin-top: 10px;
 }
 
@@ -463,4 +462,58 @@ img {
   left: 0;
   top: 5px;
   font-size: var(--fs-sm);
+}
+
+/* Team */
+.team-itm {
+  grid-column: span 4;
+}
+
+.team-itm .img-box {
+  max-width: 350px;
+  box-shadow: var(--shadow);
+  background-color: var(--bg-color);
+  margin: auto;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.team-itm img {
+  border-radius: 50%;
+  transition: filter 0.5s ease;
+}
+
+.team-itm img:hover {
+  filter: grayscale(50%);
+}
+
+.team-itm .detail {
+  position: relative;
+  background-color: var(--main-color);
+  width: 85%;
+  max-width: 260px;
+  padding: 15px;
+  margin: -42px auto 0;
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 1; /*Permite poner adelante o atras los elementos en el eje z*/
+  border-radius: 0 40px;
+  transition: borde-radius 0.5s ease;
+}
+
+.team-itm:hover .detail {
+  border-radius: 40px 0;
+}
+
+
+.team-itm h3 {
+  margin: 0 0 5px;
+  color: var(--text-white);
+  font-size: var(--fs-xl);
+  font-weight: 500;
+}
+
+.team-itm p {
+  margin: 0;
+  color: var(--text-light-gray);
 }
