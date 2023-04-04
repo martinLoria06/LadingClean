@@ -33,6 +33,22 @@
   --fs-sm: 0.875rem;
 }
 
+/*Variables de dark mode*/
+body.t-dark {
+  /* Color de los textos */
+  --text-x-dark-gray: hsl(0, 0%, 94%);
+  --text-dark-gray: hsl(0, 0%, 84%);
+  /* bg-colors */
+  --body-bg-color: hsl(var(--hue), 20%, 10%);
+  --bg-color: hsl(var(--hue), 13%, 17%);
+
+  /*Border color*/
+  --border-color: hsl(var(--hue), 15%, 30%);
+
+  /* shadow */
+  --shadow: 0 0 10px hsla(var(--hue), 19%, 7%, 0.9);
+}
+
 /* Base */
 html {
   scroll-behavior: smooth; /*Un scroll suave*/
@@ -363,6 +379,7 @@ textarea.input-control {
 .grid__about-img,
 .grid__about-text {
   grid-column: span 6;
+  align-self: center;
 }
 
 .grid__about-img .about-img__img-box {
@@ -616,7 +633,7 @@ textarea.input-control {
 }
 
 .footer h3 {
-  color:  var(--text-white);
+  color: var(--text-white);
   font-size: var(--fs-2xl);
   margin: 0 0 15px;
   font-weight: 500;
@@ -628,10 +645,10 @@ textarea.input-control {
   width: 40px;
   display: inline-flex;
   background-color: var(--bg-white);
-  border-radius:  50%;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
-  margin:  0 4px;
+  margin: 0 4px;
   border: 1px solid transparent;
   transition: all 0.5s ease;
 }

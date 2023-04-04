@@ -7,6 +7,7 @@
     <title>Maya Clean - Servicio de limpieza</title>
     <link rel="stylesheet" href="./css/fontawesome.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style-switcher.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -352,7 +353,41 @@
         </div>
       </footer>
       <!-- footer end -->
+
+      <!-- style switcher start -->
+      <div class="style-switcher js-style-switcher">
+        <button
+          type="button"
+          class="style-switcher-toggler js-style-switcher-toggler"
+        >
+          <i class="fas fa-cog"></i>
+        </button>
+        <div class="style-switcher-main">
+          <h2>style switcher</h2>
+          <div class="style-switcher-item">
+            <p>Theme Color</p>
+            <div class="theme-color">
+              <input
+                type="range"
+                min="0"
+                max="360"
+                class="hue-slider js-hue-slider"
+              />
+              <div class="hue">Hue :<span class="js-hue"></span></div>
+            </div>
+          </div>
+          <div class="style-switcher-item">
+            <label class="form-switch">
+              <span>Dark Mode</span>
+              <input type="checkbox" class="js-dark-mode" />
+              <div class="box"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- style switcher end -->
     </main>
     <script src="./js/main.js"></script>
+    <script src="./js/style-switcher.js"></script>
   </body>
 </html>
