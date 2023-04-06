@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maya Clean - Servicio de limpieza</title>
     <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/style-switcher.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,18 +17,23 @@
     />
   </head>
   <body>
+    <!-- Preloader start -->
+    <div class="preloander js-preloander">
+      <div></div>
+    </div>
+    <!-- Preloader end -->
     <!-- Page wrapper start -->
     <div class="page-wrapper">
       <header class="header js-header">
         <div class="container">
-          <div class="logo">
+          <div class="logo" data-aos="fade-down" data-aos-duration="1000">
             <a href="#home">Maya Clean<span>Servicio de Limpieza</span></a>
           </div>
-          <button type="button" class="nav-toggler js-nav-toggler">
+          <button type="button" class="nav-toggler js-nav-toggler" data-aos="fade-down" data-aos-duration="1000">
             <span></span>
           </button>
           <nav class="nav js-nav">
-            <ul>
+            <ul data-aos="fade-down" data-aos-duration="1000">
               <li><a href="#home">home</a></li>
               <li><a href="#about">about</a></li>
               <li><a href="#services">services</a></li>
@@ -38,355 +44,357 @@
           </nav>
         </div>
       </header>
+      <main>
+        <!-- Home seccion star-->
+        <section class="home" id="home">
+          <div class="container">
+            <div class="grid">
+              <div class="grid__home-text">
+                <h1 data-aos="fade-up" data-aos-duration="1000">Necesita un servicio de limpieza ?</h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates suscipit sint culpa enim sequi ipsam.
+                </p>
+                <div class="btn-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  <a href="#about" class="btn">Know more</a>
+                </div>
+              </div>
+              <div class="grid__home-img">
+                <div class="circle-wrap" data-aos="fade-right" data-aos-duration="1000">
+                  <div class="circle"></div>
+                </div>
+                <img src="imgs/home-img.png" alt="img" data-aos="fade-left" data-aos-duration="1000" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Home seccion end-->
+  
+        <!-- About Secction start -->
+        <section class="about section-padding" id="about">
+          <div class="container">
+            <div class="grid">
+              <div class="grid__about-img">
+                <div class="about-img__img-box" data-aos="zoom-in" data-aos-duration="1000">
+                  <img src="./imgs/about-img.png" alt="img" />
+                  <div class="box box-1">
+                    <span>2.5k</span>
+                    <p>satisfied clients</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__about-text">
+                <div class="section-title">
+                  <span class="title" data-aos="fade-up" data-aos-duration="600">About us</span>
+                  <h2 class="sub-title" data-aos="fade-up" data-aos-duration="600">We're cleaning since 2023</h2>
+                </div>
+                <p data-aos="fade-up" data-aos-duration="600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+                  labore blanditiis debitis ad necessitatibus nobis, ullam ipsum.
+                  Aliquam, veniam hic?
+                </p>
+                <p data-aos="fade-up" data-aos-duration="600">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Obcaecati debitis neque in maxime ullam eius animi, asperiores
+                  omnis cupiditate autem!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About Secction end -->
+  
+        <!-- Services section start -->
+        <section class="services section-padding" id="services">
+          <div class="container">
+            <div class="section-title">
+              <span class="title" data-aos="fade-up" data-aos-duration="600">services</span>
+              <h2 class="sub-title" data-aos="fade-up" data-aos-duration="600">what we do</h2>
+            </div>
+            <div class="grid">
+              <!-- services item start -->
+              <div class="services-item" data-aos="fade-up" data-aos-duration="600">
+                <div class="services-item__img-box">
+                  <img src="./imgs/service/house.jpg" alt="carpet" />
+                </div>
+                <h3>carpet cleaning</h3>
+              </div>
+              <!-- services item end -->
+              <!-- services item start -->
+              <div class="services-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="services-item__img-box">
+                  <img src="./imgs/service/window.jpg" alt="window" />
+                </div>
+                <h3>windw cleaning</h3>
+              </div>
+              <!-- services item end -->
+              <!-- services item start -->
+              <div class="services-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="services-item__img-box">
+                  <img src="./imgs/service/bathroom.jpg" alt="bathroom" />
+                </div>
+                <h3>bathroom cleaning</h3>
+              </div>
+              <!-- services item end -->
+              <!-- services item start -->
+              <div class="services-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                <div class="services-item__img-box">
+                  <img src="./imgs/service/furniture.png" alt="furniture" />
+                </div>
+                <h3>furniture cleaning</h3>
+              </div>
+              <!-- services item end -->
+            </div>
+          </div>
+        </section>
+        <!-- Services section end -->
+  
+        <!-- pricing section -->
+        <section class="pricing section-padding" id="pricing">
+          <div class="container">
+            <div class="section-title">
+              <span class="title" data-aos="fade-up" data-aos-duration="600">pricing</span>
+              <h2 class="sub-title" data-aos="fade-up" data-aos-duration="600">our pricing plans</h2>
+            </div>
+            <div class="grid">
+              <!-- basic plans start -->
+              <div class="pricing-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="pricing-header">
+                  <h3>basic</h3>
+                  <div class="price"><span>$299</span> montly</div>
+                </div>
+                <div class="princing-body">
+                  <ul>
+                    <li><i class="fas fa-check"></i> window cleaning</li>
+                    <li><i class="fas fa-check"></i> carpet cleaning</li>
+                    <li><i class="fas fa-times"></i> furniture cleaning</li>
+                    <li><i class="fas fa-times"></i> car cleaning</li>
+                    <li><i class="fas fa-times"></i> bathroom cleaning</li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="#" class="btn">get started</a>
+                </div>
+              </div>
+              <!-- basic plans end -->
+  
+              <!-- standard plans start -->
+              <div class="pricing-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="pricing-header">
+                  <h3>standard</h3>
+                  <div class="price"><span>$499</span> montly</div>
+                </div>
+                <div class="princing-body">
+                  <ul>
+                    <li><i class="fas fa-check"></i> window cleaning</li>
+                    <li><i class="fas fa-check"></i> carpet cleaning</li>
+                    <li><i class="fas fa-check"></i> furniture cleaning</li>
+                    <li><i class="fas fa-check"></i> car cleaning</li>
+                    <li><i class="fas fa-times"></i> bathroom cleaning</li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="#" class="btn">get started</a>
+                </div>
+              </div>
+              <!-- standard plans end -->
+  
+              <!-- premiun plans start -->
+              <div class="pricing-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="pricing-header">
+                  <h3>premium</h3>
+                  <div class="price"><span>$899</span> montly</div>
+                </div>
+                <div class="princing-body">
+                  <ul>
+                    <li><i class="fas fa-check"></i> window cleaning</li>
+                    <li><i class="fas fa-check"></i> carpet cleaning</li>
+                    <li><i class="fas fa-check"></i> furniture cleaning</li>
+                    <li><i class="fas fa-check"></i> car cleaning</li>
+                    <li><i class="fas fa-check"></i> bathroom cleaning</li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="#" class="btn">get started</a>
+                </div>
+              </div>
+              <!-- premiun  plans end -->
+            </div>
+          </div>
+        </section>
+        <!-- pricing section -->
+  
+        <!-- Team section start -->
+        <section class="team section-padding" id="team">
+          <div class="container">
+            <div class="section-title">
+              <span class="title" data-aos="fade-up" data-aos-duration="600">Team</span>
+              <h2 class="sub-title" data-aos="fade-up" data-aos-duration="600">meet our team</h2>
+            </div>
+            <div class="grid">
+              <!-- team item start -->
+              <div class="team-itm" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img-box">
+                  <img src="./imgs/team/1.png" alt="img" />
+                </div>
+                <div class="detail">
+                  <h3>john doe</h3>
+                  <p>team leader</p>
+                </div>
+              </div>
+              <!-- team item end -->
+  
+              <!-- team item start -->
+              <div class="team-itm" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="img-box">
+                  <img src="./imgs/team/2.png" alt="img" />
+                </div>
+                <div class="detail">
+                  <h3>jesus doe</h3>
+                  <p>car cleaner</p>
+                </div>
+              </div>
+              <!-- team item end -->
+  
+              <!-- team item start -->
+              <div class="team-itm" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="img-box">
+                  <img src="./imgs/team/3.png" alt="img" />
+                </div>
+                <div class="detail">
+                  <h3>mario doe</h3>
+                  <p>cleaner</p>
+                </div>
+              </div>
+              <!-- team item end -->
+            </div>
+          </div>
+        </section>
+        <!-- Team section end -->
+  
+        <!-- contact section start -->
+        <section class="contact section-padding" id="contact">
+          <div class="container">
+            <div class="section-title">
+              <span class="title" data-aos="fade-up" data-aos-duration="600">Contactanos</span>
+              <h2 class="sub-title" data-aos="fade-up" data-aos-duration="600">Tiene alguna pregunta ?</h2>
+            </div>
+            <div class="grid contact-grid">
+              <div class="contact-info">
+                <div class="contact-info-item" data-aos="fade-up" data-aos-duration="600">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h3>Addres</h3>
+                  <p>Street 20th 452 new mexico</p>
+                </div>
+                <div class="contact-info-item" data-aos="fade-up" data-aos-duration="600">
+                  <i class="fas fa-phone"></i>
+                  <h3>Call us</h3>
+                  <p>99 99 99 99 99</p>
+                </div>
+                <div class="contact-info-item" data-aos="fade-up" data-aos-duration="600">
+                  <i class="fas fa-envelope"></i>
+                  <h3>Email us</h3>
+                  <p>in@info.com</p>
+                </div>
+              </div>
+              <div class="contact-form" data-aos="fade-up" data-aos-duration="600">
+                <form action="">
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      placeholder="phone"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-box">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      class="input-control"
+                      placeholder="message"
+                      required
+                    ></textarea>
+                  </div>
+                  <!-- <div class="btn-wrap" data-aos="fade-up" data-aos-duration="600"> -->
+                    <button type="submit" class="btn">Send Message</button>
+                  <!-- </div> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact section end -->
+  
+        <!-- footer start -->
+        <footer class="footer">
+          <div class="container">
+            <h3>follow us</h3>
+            <div class="social-links">
+              <a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </footer>
+        <!-- footer end -->
+  
+        <!-- style switcher start -->
+        <div class="style-switcher js-style-switcher">
+          <button
+            type="button"
+            class="style-switcher-toggler js-style-switcher-toggler"
+          >
+            <i class="fas fa-cog"></i>
+          </button>
+          <div class="style-switcher-main">
+            <h2>style switcher</h2>
+            <div class="style-switcher-item">
+              <p>Theme Color</p>
+              <div class="theme-color">
+                <input
+                  type="range"
+                  min="0"
+                  max="360"
+                  class="hue-slider js-hue-slider"
+                />
+                <div class="hue">Hue :<span class="js-hue"></span></div>
+              </div>
+            </div>
+            <div class="style-switcher-item">
+              <label class="form-switch">
+                <span>Dark Mode</span>
+                <input type="checkbox" class="js-dark-mode" />
+                <div class="box"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- style switcher end -->
+      </main>
     </div>
     <!-- Page wrapper end -->
-    <main>
-      <!-- Home seccion star-->
-      <section class="home" id="home">
-        <div class="container">
-          <div class="grid">
-            <div class="grid__home-text">
-              <h1>Necesita un servicio de limpieza ?</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates suscipit sint culpa enim sequi ipsam.
-              </p>
-              <div class="btn-wrap">
-                <a href="#about" class="btn">Know more</a>
-              </div>
-            </div>
-            <div class="grid__home-img">
-              <div class="circle-wrap">
-                <div class="circle"></div>
-              </div>
-              <img src="imgs/home-img.png" alt="img" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Home seccion end-->
-
-      <!-- About Secction start -->
-      <section class="about section-padding" id="about">
-        <div class="container">
-          <div class="grid">
-            <div class="grid__about-img">
-              <div class="about-img__img-box">
-                <img src="./imgs/about-img.png" alt="img" />
-                <div class="box box-1">
-                  <span>2.5k</span>
-                  <p>satisfied clients</p>
-                </div>
-              </div>
-            </div>
-            <div class="grid__about-text">
-              <div class="section-title">
-                <span class="title">About us</span>
-                <h2 class="sub-title">We're cleaning since 2023</h2>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-                labore blanditiis debitis ad necessitatibus nobis, ullam ipsum.
-                Aliquam, veniam hic?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Obcaecati debitis neque in maxime ullam eius animi, asperiores
-                omnis cupiditate autem!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Secction end -->
-
-      <!-- Services section start -->
-      <section class="services section-padding" id="services">
-        <div class="container">
-          <div class="section-title">
-            <span class="title">services</span>
-            <h2 class="sub-title">what we do</h2>
-          </div>
-          <div class="grid">
-            <!-- services item start -->
-            <div class="services-item">
-              <div class="services-item__img-box">
-                <img src="./imgs/service/house.jpg" alt="carpet" />
-              </div>
-              <h3>carpet cleaning</h3>
-            </div>
-            <!-- services item end -->
-            <!-- services item start -->
-            <div class="services-item">
-              <div class="services-item__img-box">
-                <img src="./imgs/service/window.jpg" alt="window" />
-              </div>
-              <h3>windw cleaning</h3>
-            </div>
-            <!-- services item end -->
-            <!-- services item start -->
-            <div class="services-item">
-              <div class="services-item__img-box">
-                <img src="./imgs/service/bathroom.jpg" alt="bathroom" />
-              </div>
-              <h3>bathroom cleaning</h3>
-            </div>
-            <!-- services item end -->
-            <!-- services item start -->
-            <div class="services-item">
-              <div class="services-item__img-box">
-                <img src="./imgs/service/furniture.png" alt="furniture" />
-              </div>
-              <h3>furniture cleaning</h3>
-            </div>
-            <!-- services item end -->
-          </div>
-        </div>
-      </section>
-      <!-- Services section end -->
-
-      <!-- pricing section -->
-      <section class="pricing section-padding" id="pricing">
-        <div class="container">
-          <div class="section-title">
-            <span class="title">pricing</span>
-            <h2 class="sub-title">our pricing plans</h2>
-          </div>
-          <div class="grid">
-            <!-- basic plans start -->
-            <div class="pricing-item">
-              <div class="pricing-header">
-                <h3>basic</h3>
-                <div class="price"><span>$299</span> montly</div>
-              </div>
-              <div class="princing-body">
-                <ul>
-                  <li><i class="fas fa-check"></i> window cleaning</li>
-                  <li><i class="fas fa-check"></i> carpet cleaning</li>
-                  <li><i class="fas fa-times"></i> furniture cleaning</li>
-                  <li><i class="fas fa-times"></i> car cleaning</li>
-                  <li><i class="fas fa-times"></i> bathroom cleaning</li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="btn">get started</a>
-              </div>
-            </div>
-            <!-- basic plans end -->
-
-            <!-- standard plans start -->
-            <div class="pricing-item">
-              <div class="pricing-header">
-                <h3>standard</h3>
-                <div class="price"><span>$499</span> montly</div>
-              </div>
-              <div class="princing-body">
-                <ul>
-                  <li><i class="fas fa-check"></i> window cleaning</li>
-                  <li><i class="fas fa-check"></i> carpet cleaning</li>
-                  <li><i class="fas fa-check"></i> furniture cleaning</li>
-                  <li><i class="fas fa-check"></i> car cleaning</li>
-                  <li><i class="fas fa-times"></i> bathroom cleaning</li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="btn">get started</a>
-              </div>
-            </div>
-            <!-- standard plans end -->
-
-            <!-- premiun plans start -->
-            <div class="pricing-item">
-              <div class="pricing-header">
-                <h3>premium</h3>
-                <div class="price"><span>$899</span> montly</div>
-              </div>
-              <div class="princing-body">
-                <ul>
-                  <li><i class="fas fa-check"></i> window cleaning</li>
-                  <li><i class="fas fa-check"></i> carpet cleaning</li>
-                  <li><i class="fas fa-check"></i> furniture cleaning</li>
-                  <li><i class="fas fa-check"></i> car cleaning</li>
-                  <li><i class="fas fa-check"></i> bathroom cleaning</li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="btn">get started</a>
-              </div>
-            </div>
-            <!-- premiun  plans end -->
-          </div>
-        </div>
-      </section>
-      <!-- pricing section -->
-
-      <!-- Team section start -->
-      <section class="team section-padding" id="team">
-        <div class="container">
-          <div class="section-title">
-            <span class="title">Team</span>
-            <h2 class="sub-title">meet our team</h2>
-          </div>
-          <div class="grid">
-            <!-- team item start -->
-            <div class="team-itm">
-              <div class="img-box">
-                <img src="./imgs/team/1.png" alt="img" />
-              </div>
-              <div class="detail">
-                <h3>john doe</h3>
-                <p>team leader</p>
-              </div>
-            </div>
-            <!-- team item end -->
-
-            <!-- team item start -->
-            <div class="team-itm">
-              <div class="img-box">
-                <img src="./imgs/team/2.png" alt="img" />
-              </div>
-              <div class="detail">
-                <h3>jesus doe</h3>
-                <p>car cleaner</p>
-              </div>
-            </div>
-            <!-- team item end -->
-
-            <!-- team item start -->
-            <div class="team-itm">
-              <div class="img-box">
-                <img src="./imgs/team/3.png" alt="img" />
-              </div>
-              <div class="detail">
-                <h3>mario doe</h3>
-                <p>cleaner</p>
-              </div>
-            </div>
-            <!-- team item end -->
-          </div>
-        </div>
-      </section>
-      <!-- Team section end -->
-
-      <!-- contact section start -->
-      <section class="contact section-padding" id="contact">
-        <div class="container">
-          <div class="section-title">
-            <span class="title">Contactanos</span>
-            <h2 class="sub-title">Tiene alguna pregunta ?</h2>
-          </div>
-          <div class="grid contact-grid">
-            <div class="contact-info">
-              <div class="contact-info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Addres</h3>
-                <p>Street 20th 452 new mexico</p>
-              </div>
-              <div class="contact-info-item">
-                <i class="fas fa-phone"></i>
-                <h3>Call us</h3>
-                <p>99 99 99 99 99</p>
-              </div>
-              <div class="contact-info-item">
-                <i class="fas fa-envelope"></i>
-                <h3>Email us</h3>
-                <p>in@info.com</p>
-              </div>
-            </div>
-            <div class="contact-form">
-              <form action="">
-                <div class="input-box">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    class="input-control"
-                    required
-                  />
-                </div>
-                <div class="input-box">
-                  <input
-                    type="text"
-                    placeholder="phone"
-                    class="input-control"
-                    required
-                  />
-                </div>
-                <div class="input-box">
-                  <input
-                    type="text"
-                    placeholder="Email"
-                    class="input-control"
-                    required
-                  />
-                </div>
-                <div class="input-box">
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="10"
-                    class="input-control"
-                    placeholder="message"
-                    required
-                  ></textarea>
-                </div>
-                <div class="btn-wrap">
-                  <button type="submit" class="btn">Send Message</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- contact section end -->
-
-      <!-- footer start -->
-      <footer class="footer">
-        <div class="container">
-          <h3>follow us</h3>
-          <div class="social-links">
-            <a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-      </footer>
-      <!-- footer end -->
-
-      <!-- style switcher start -->
-      <div class="style-switcher js-style-switcher">
-        <button
-          type="button"
-          class="style-switcher-toggler js-style-switcher-toggler"
-        >
-          <i class="fas fa-cog"></i>
-        </button>
-        <div class="style-switcher-main">
-          <h2>style switcher</h2>
-          <div class="style-switcher-item">
-            <p>Theme Color</p>
-            <div class="theme-color">
-              <input
-                type="range"
-                min="0"
-                max="360"
-                class="hue-slider js-hue-slider"
-              />
-              <div class="hue">Hue :<span class="js-hue"></span></div>
-            </div>
-          </div>
-          <div class="style-switcher-item">
-            <label class="form-switch">
-              <span>Dark Mode</span>
-              <input type="checkbox" class="js-dark-mode" />
-              <div class="box"></div>
-            </label>
-          </div>
-        </div>
-      </div>
-      <!-- style switcher end -->
-    </main>
+   
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/style-switcher.js"></script>
   </body>
