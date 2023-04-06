@@ -12,3 +12,19 @@ const headerBg = () => {
 };
 
 headerBg();
+
+/*Nav */
+const navigation = () => {
+  const navToggler = document.querySelector(".js-nav-toggler");
+  const nav = document.querySelector(".js-nav");
+  const navItem = nav.querySelectorAll("li");
+
+  const navToggle = () => {
+    nav.classList.toggle("open");
+    navToggler.classList.toggle("active");
+  };
+
+  navToggler.addEventListener("click", navToggle);
+};
+
+navigation();

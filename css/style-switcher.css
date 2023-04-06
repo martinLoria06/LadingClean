@@ -5,8 +5,13 @@
   z-index: 10;
   width: 280px;
   height: 100%;
-  box-shadow: var(--shadow);
   transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+
+.style-switcher.open {
+  transform: translateX(0);
+  box-shadow: var(--shadow);
 }
 
 .style-switcher-main {

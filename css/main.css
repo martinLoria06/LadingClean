@@ -658,3 +658,144 @@ textarea.input-control {
   color: var(--text-white);
   border-color: initial;
 }
+
+/* Resposive */
+@media (max-width: 1199px) {
+  .grid__about-img .box-1 {
+    top: 100%;
+    left: 50%;
+  }
+}
+@media (max-width: 991px) {
+  /* Variables */
+  :root {
+    --fs-4xl: 42px;
+    --fs-3xl: 31px;
+    --fs-2xl: 24px;
+  }
+
+  /* Home */
+  .grid__home-img {
+    max-width: 250px;
+  }
+
+  .grid__home-img .circle {
+    height: 290px;
+    width: 290px;
+  }
+
+  /* Services */
+  .services-item .services-item__img-box {
+    height: 120px;
+    width: 120px;
+  }
+
+  /* Pricing */
+  .pricing-item {
+    grid-column: span 6;
+  }
+
+  .pricing-header .price {
+    width: 130px;
+    height: 130px;
+  }
+
+  /* Team */
+  .team-itm {
+    grid-column: span 6;
+  }
+}
+@media (max-width: 767px) {
+  /* Variables */
+  :root {
+    --fs-4xl: 35px;
+    --fs-3xl: 26px;
+    --fs-2xl: 22px;
+    --fs-xl: 18px;
+  }
+
+  /* Header */
+  .nav-toggler {
+    display: block;
+    height: 34px;
+    width: 40px;
+    border: none;
+    z-index: 1;
+    background-color: transparent;
+  }
+
+  .nav-toggler span {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 24px;
+    background-color: var(--main-color);
+    margin: auto;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-toggler.active span {
+    background-color: transparent;
+  }
+
+  .nav-toggler span::after,
+  .nav-toggler span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-toggler span::before {
+    transform: translateY(-7px);
+  }
+
+  .nav-toggler.active span::before {
+    transform: rotate(45deg);
+  }
+
+  .nav-toggler span::after {
+    transform: translateY(7px);
+  }
+
+  .nav-toggler.active span::after {
+    transform: rotate(-45deg);
+  }
+
+  .nav.open {
+    transform: translateX(0);
+    box-shadow: var(--shadow);
+  }
+
+  .nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 260px;
+    background-color: var(--bg-color);
+    padding: 60px 30px 30px;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+
+  .nav li {
+    display: block;
+    margin: 0;
+  }
+
+  .nav a {
+    font-size: var(--fs-1g);
+  }
+
+  .nav li + li {
+    border-top: 1px solid var(--border-color);
+  }
+}
+@media (max-width: 575px) {
+}
